@@ -1,0 +1,355 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Store Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-gray-600 font-body">
+    
+    <div class="grid md:grid-cols-3">    <!--Content Wrapper-->
+        <div class="md:col-span-1 md:flex md:justify-end fixed">
+            <nav class="text-right">
+                <div class="flex justify-between items-center">
+                    <h1 class="text-2xl font-bold p-4 border-b border-gray-100">
+                        <a href="#" class="hover:text-blue-900"  id="more">Foodie Zone</a>
+                    </h1>
+                    <div class="px-4 cursor-pointer md:hidden" id="navbar">
+                        <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                          </svg>      
+                    </div>
+                </div>
+                <ul class="mt-6 space-y-2 hidden md:block" id="menu">
+                    <li class="text-gray-800 font-bold">
+                        <a href="#" class="px-4 flex justify-end border-r-4 border-red-400">
+                            <span>Home</span>
+                            <svg class="w-6 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                              </svg>
+                              
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="px-4 flex justify-end border-r-4 border-red-400">
+                            <span>About</span>
+                            <svg class="w-6 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                              </svg>
+                              
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="px-4 flex justify-end border-r-4 border-red-400">
+                            <span>Contact</span>
+                            <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 3.75v4.5m0-4.5h-4.5m4.5 0-6 6m3 12c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z" />
+                              </svg>
+                        </a>
+                        <h5 class="mt-5 px-4 flex justify-end text-xl font-bold border-b border-gray-200">Categories</h5>
+                        <a href="#recipe" class="mt-5 px-4 font-semibold flex justify-end">
+                        <span>Latest Recipes</span></a>
+                        <a href="#popular" class="mt-4 px-4 font-semibold flex justify-end">
+                        <span>Most Popular</span></a>
+                        <a href="#drink" class="mt-4 px-4 font-semibold flex justify-end">
+                        <span>Cold Drinks</span></a>
+                        </header>
+                    </li>
+                </ul>
+            </nav>
+        </div>    <!--End nav-->
+
+        <main class="px-16 py-6 bg-gray-100 md:col-span-2">
+            <div class="flex justify-center md:justify-end">
+                <a href="#" class="text-red-400 btn border-red-400 md:border-4 hover:bg-red-400 hover:text-white transition ease-out duration-500">Log in</a>
+                <a href="#" class="text-red-400 ml-2 btn border-red-400 md:border-4 hover:bg-red-400 hover:text-white transition ease-out duration-500">Sign up</a>
+            </div>
+
+            <header>
+                <h2 class="text-gray-700 text-6xl font-semibold mt-10">Recipes</h2>
+                <h3 class="text-2xl font-semibold">For Foodies</h3>
+            </header>
+      
+            <div>
+                <h4 class="text-xl font-bold mt-12 pb-2 border-b border-gray-200" id="recipe">Latest Recipes</h4>
+
+                <div class="mt-8 grid lg:grid-cols-3 gap-10">    <!--cards go here-->
+                    <div class="card hover:shadow-xl">
+                        <img src="https://img.taste.com.au/aqANr1rT/w720-h480-cfill-q80/taste/2020/02/mar20_5-veggie-and-3-bean-chilli-158613-1.jpg" alt="Stew" class="w-full h-45 sm:56 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">5 Bean Chilli Stew</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Fakruddin</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                              </svg> 
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-xl">
+                        <img src="https://j6e2i8c9.rocketcdn.me/wp-content/uploads/2015/05/noodles_food_1.jpg" alt="Noodles" class="w-full h-45 sm:56 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Veg Noodles</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Tommy Miah</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                              </svg>  
+                            <span>40 mins</span>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-xl">
+                        <img src="https://mypureplants.com/wp-content/uploads/2021/09/Red-Curry-Tofu-INS-1.jpg" alt="Curry" class="w-full h-45 sm:56 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Tofu Curry</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Fakruddin</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                              </svg>  
+                            <span>30 mins</span>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-xl">
+                        <img src="https://foodhub.scene7.com/is/image/woolworthsltdprod/1601-cheesyhotdogs:Mobile-1300x1150" alt="Hot Dogs" class="w-full h-45 sm:56 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Cheesy Hot Dogs</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Tommy Miah</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                              </svg>  
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-xl">
+                        <img src="https://www.allrecipes.com/thmb/8SI7kuVs0lOwi7PiDvdou4Uzqe8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/241152-fried-chicken-wings-ddmfs-hero-3x4-1260-d37ffaac793c4db7a4ced4ab24a5d2ee.jpg" alt="Chicken Wings" class="w-full h-45 sm:56 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Fried Chicken Wings</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Fakruddin</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                              </svg>  
+                            <span>50 mins</span>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-xl">
+                        <img src="https://ministryofcurry.com/wp-content/uploads/2021/05/chicken-shawarma-6.jpg" alt="Shawarma" class="w-full h-45 sm:56 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Chicken Shawarma</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Fakruddin</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                              </svg>  
+                            <span>30 mins</span>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-xl">
+                        <img src="https://www.cookingclassy.com/wp-content/uploads/2014/10/vegetable-soup-7-500x500.jpg" alt="Soup" class="w-full h-45 sm:56 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Vegetable Soup</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Tommy Miah</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                              </svg>  
+                            <span>45 mins</span>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-xl">
+                        <img src="https://mojo.generalmills.com/api/public/content/yQzTTjG6Hk-xEHZI5Xt03A_gmi_hi_res_jpeg.jpeg?v=4d46c328&t=16e3ce250f244648bef28c5949fb99ff" alt="Pasta" class="w-full h-45 sm:56 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Chicken and Pasta</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Tommy Miah</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                              </svg>  
+                            <span>30 mins</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="text-xl font-bold mt-12 pb-2 border-b border-gray-200" id="popular">Most Popular</h4>
+
+                <div class="mt-8 grid lg:grid-cols-3 gap-10">    <!--cards go here-->
+                    <div class="card hover:shadow-xl">
+                        <img src="https://img.bestrecipes.com.au/iyddCRce/br/2019/02/1980-crunchy-chicken-twisties-drumsticks-951509-1.jpg" alt="Chicken drumsticks" class="w-full h-45 sm:56 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Crunchy Chicken Twisties drumsticks</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Tommy Miah</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                              </svg> 
+                            <span>45 mins</span>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-xl">
+                        <img src="https://www.noracooks.com/wp-content/uploads/2023/04/veggie-burgers-1-2-500x500.jpg" alt="Burger" class="w-full h-45 sm:56 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Veggie Burger</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Fakruddin</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                              </svg>  
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-xl">
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/classic-cheese-pizza-recipe-2-64429a0cb408b.jpg?crop=0.8888888888888888xw:1xh;center,top&resize=1200:*" alt="Pizza" class="w-full h-45 sm:56 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Classic Cheese Pizza</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Tommy Miah</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                              </svg>  
+                            <span>50 mins</span>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-xl">
+                        <img src="https://c.ndtvimg.com/2021-07/mor1i2ho_sub-sandwich_625x300_27_July_21.jpg" alt="Sandwich" class="w-full h-45 sm:56 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Chicken Sub Sandwich</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Tommy Miah</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                              </svg>  
+                            <span>15 mins</span>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-xl">
+                        <img src="https://images.deliveryhero.io/image/fd-bd/Products/7117492.jpg?width=%s" alt="Meat Box" class="w-full h-45 sm:56 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Meat Box</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Fakruddin</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                              </svg>
+                            <span>20 mins</span>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-xl">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2021/7/DO/EA/VN/124917163/new-product.jpeg" alt="Chowmein" class="w-full h-45 sm:56 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Chicken Chowmein</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Tommy Miah</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                              </svg>  
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-xl">
+                        <img src="https://thissillygirlskitchen.com/wp-content/uploads/2020/02/homemade-french-fries-5.jpg" alt="French Fries" class="w-full h-45 sm:56 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">French Fries</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Fakruddin</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                              </svg>  
+                            <span>40 mins</span>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-xl">
+                        <img src="https://bellyrumbles.com/wp-content/uploads/2021/08/korean-hot-dogs.jpg" alt="Corn Dogs" class="w-full h-45 sm:56 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Corn Dogs</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Tommy Miah</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                              </svg>  
+                            <span>35 mins</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="text-xl font-bold mt-12 pb-2 border-b border-gray-200" id="drink">Cold Drinks</h4>
+
+                <div class="mt-8 grid lg:grid-cols-3 gap-10">    <!--cards go here-->
+                    <div class="card hover:shadow-xl">
+                        <img src="https://recipefairy.com/wp-content/uploads/2019/12/chocolate-milkshake-with-icecream-scaled.jpg" alt="Chocolate Milkshake" class="w-full h-45 sm:56 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Chocolate Milkshake</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                              </svg> 
+                            <span>4 mins</span>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-xl">
+                        <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/04/mocktail-3b9ab7d.jpg" alt="Mocktail" class="w-full h-45 sm:56 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Summer Cup Mocktail</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                              </svg>  
+                            <span>5 mins</span>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-xl">
+                        <img src="https://www.whiskaffair.com/wp-content/uploads/2020/05/Mango-Lassi-2-3.jpg" alt="Mango Lassi" class="w-full h-45 sm:56 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Mango Lassi</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                              </svg>  
+                            <span>4 mins</span>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-xl">
+                        <img src="data:image/jpeg;base64,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" alt="Lemonade" class="w-full h-45 sm:56 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Lemonade</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                              </svg>  
+                            <span>3 mins</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-7 flex justify-center">
+                    <a href="#more"><div class="bg-slate-300 text-stone-700 btn hover:shadow-inner hover:border-2 border-stone-700 transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300">Load More</div></a>
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
